@@ -1,0 +1,62 @@
+//
+//    SA<SA<int>> a(rows_a, cols_a);
+//    SA<SA<int>> b(rows_b);
+//
+//    int i;
+//    for (i = 0; i < rows_a; i++) {
+//        a[i] = SA<int>(cols_a);
+//        for(int j = 0; j < cols_a; j++){
+//            a[i][j] = rand()%30;
+//        }
+//    }
+//
+//    for (i=0; i<rows_b; i++){
+//        b[i] = SA<int>(cols_b);
+//        for(int j = 0; j < cols_b; j++){
+//            b[i][j] = rand()%15;
+//        }
+//    };
+//    cout<<"This is Matrix A ("<<rows_a<<"x"<<cols_a<<"): \n";
+//    for(i=0; i<rows_a;i++){
+//        cout<<"a["<<i<<"]  [\t";
+//        cout<<a[i]<<" ]\n";
+//    }
+//    cout<<"\n";
+//    cout<<"This is Matrix B ("<<rows_b<<"x"<<cols_b<<"): \n";
+//    for(i=0; i<rows_b;i++){
+//        cout<<"b["<<i<<"]  [\t";
+//        cout<<b[i]<<" ]\n";
+//    }
+//    SA<SA<int>> c = matrix_mult(a, rows_a, cols_a, b, rows_b, cols_b);
+
+
+
+template<class T>
+SA<SA<T>> matrix_mult(SA<SA<T>> x, int rows_x, int cols_x, SA<SA<T>> y, int rows_y, int cols_y){
+    //checks if the matrices are allowed to be multiplied.
+    if(cols_x != rows_y){
+        cout<<"\nMatricies are not multiplication compatible!!!\nCOLOUMN # of Matrix A MUST EQUAL ROW # of Matrix B";
+        return NULL;
+    }
+    SA<SA<int>> temp(rows_x);
+    for(int i=0; i<rows_x; i++){
+        temp[i] = SA<int>(cols_y);
+    }
+    int new_sum=0;
+    for(int i = 0; i < rows_x; i++){
+        for(int j = 0; j < cols_y; j++){
+
+            for(int m=0; m < cols_x; m++){
+                new_sum += x[i][m] * y[m][j];
+            }//for M
+            temp[i][j]=new_sum;
+            new_sum=0;
+        }//for J
+    }//for I
+    cout<<"Resulting Matrix (A x B -> "<<rows_x<<"x"<<cols_y<<")\n";
+    for( int i=0; i<rows_x;i++){
+        cout<<"prod["<<i<<"]  ";
+        cout<<temp[i]<<endl;
+    }
+    return temp;
+}//matrix_mult

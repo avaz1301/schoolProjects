@@ -1,0 +1,6 @@
+*.iml
+CMake*
+out
+*.zip
+META-INF
+.idea

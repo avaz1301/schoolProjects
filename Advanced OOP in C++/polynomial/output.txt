@@ -1,0 +1,14 @@
+Polynomial A -> -1x^0 + 5x^1 + 20x^3 - 9x^2 - 2x^2 - 2x^3 + 1x^9
+
+Polynomial B -> -1x^0 + 5x^1 + 20x^3 - 9x^2 - 2x^2 - 2x^3 + 1x^9
+
+Polynomial A_1 (Polynomial A consolidated) -> 1x^9 + 18x^3 - 11x^2 + 5x^1 - 1x^0
+
+Polynomial B_1 (Polynomial B consolidated) -> 1x^9 + 18x^3 - 11x^2 + 5x^1 - 1x^0
+
+Polynomial SUM (A + B) -> 2x^9 + 36x^3 - 22x^2 + 10x^1 - 2x^0
+
+Polynomial DIFF (A - B) -> 
+
+Polynomial PROD (A * B) -> 1x^18 + 36x^12 - 22x^11 + 10x^10 - 2x^9 + 324x^6 - 396x^5 + 301x^4 - 146x^3 + 47x^2 - 10x^1 + 1x^0
+

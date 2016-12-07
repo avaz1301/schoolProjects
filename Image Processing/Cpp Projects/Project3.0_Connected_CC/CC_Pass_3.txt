@@ -1,0 +1,4 @@
+Label: 1
+# of Pixels: 491
+minRow: 9 minCol: 8 maxRow: 42 maxCol: 40
+

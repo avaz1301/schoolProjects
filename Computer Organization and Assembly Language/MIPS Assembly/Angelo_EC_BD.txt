@@ -1,0 +1,36 @@
+
+public class Birthday {
+	public static void main(String [] args) {		
+		double num_ppl1=0;
+		double num_ppl2=0;
+		double num_ppl3=0;
+		double prob1=1;		
+		double prob2=1;
+		double prob3=1;		
+		
+		for(double i=365; i>0; i--) {
+			prob1*=(i/365);
+			if(!(prob1>.05)) {
+				num_ppl1=i;
+				break;
+			}
+		}//95PERCENT
+		for(double i=365; i>0; i--) {
+			prob2*=(i/365);
+			if(!(prob2>.10)) {
+				num_ppl2=i;
+				break;
+			}
+		}//90PERCENT
+		for(double i=365; i>0; i--) {
+			prob3*=(i/365);
+			if(!(prob3>.50)) {
+				num_ppl3=i;
+				break;
+			}
+		}//50PERCENT
+		System.out.println((prob1*100)+"%   NUMBER OF PEOPLE 95% COLLISION: "+(365-num_ppl1));
+		System.out.println((prob2*100)+"%   NUMBER OF PEOPLE 90% COLLISION: "+(365-num_ppl2)); 
+		System.out.println((prob3*100)+"%   NUMBER OF PEOPLE 50% COLLISION: "+(365-num_ppl3)); 
+	}//MAIN
+}//BIRTHDAY

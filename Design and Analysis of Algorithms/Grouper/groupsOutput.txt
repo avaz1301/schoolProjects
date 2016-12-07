@@ -1,0 +1,35 @@
+Inputted Text:  m (a (b c) (d (e (f g h) i) j) k) n
+Group 0--->  m (a (b c) (d (e (f g h) i) j) k) n
+Group 1--->  (a (b c) (d (e (f g h) i) j) k)
+Group 2--->  (b c)
+Group 3--->  (d (e (f g h) i) j)
+Group 4--->  (e (f g h) i)
+Group 5--->  (f g h)
+
+Inputted Text:  a (h e l (a (d) f) (q w (e r) t) l o) z
+Group 0--->  a (h e l (a (d) f) (q w (e r) t) l o) z
+Group 1--->  (h e l (a (d) f) (q w (e r) t) l o)
+Group 2--->  (a (d) f)
+Group 3--->  (d)
+Group 4--->  (q w (e r) t)
+Group 5--->  (e r)
+
+Inputted Text:  (q (w (e (r (t (y (u)(i)(k) p) a) z) f) x) v)
+Group 0--->  (q (w (e (r (t (y (u)(i)(k) p) a) z) f) x) v)
+Group 1--->  (w (e (r (t (y (u)(i)(k) p) a) z) f) x)
+Group 2--->  (e (r (t (y (u)(i)(k) p) a) z) f)
+Group 3--->  (r (t (y (u)(i)(k) p) a) z)
+Group 4--->  (t (y (u)(i)(k) p) a)
+Group 5--->  (y (u)(i)(k) p)
+Group 6--->  (u)
+Group 7--->  (i)
+Group 8--->  (k)
+
+Inputted Text:  ( (a (b c) (d e) (f) g) y x z) h
+Group 0--->  ( (a (b c) (d e) (f) g) y x z) h
+Group 1--->  ( (a (b c) (d e) (f) g) y x z)
+Group 2--->  (a (b c) (d e) (f) g)
+Group 3--->  (b c)
+Group 4--->  (d e)
+Group 5--->  (f)
+
